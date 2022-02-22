@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#dv1{
+    background: #222;
+    width: 300px;
+    height: 200px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    background: #222;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+p{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.dvForms0{
+    display: flex;
+    flex-direction: column;
+    height: 65px;
+    justify-content: center;
+}
+
+.dvForms{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.dvFormsBtn{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: flex-end;
+}
+
+#ip5{
+    flex-grow: 1;
+    margin-left: 30px;
+}
+
+.botao{
+    width: 100px;
+    height: 25px;
+    background: #09f;
+    color: #ccc;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+}
+
+.botaoWidth{
+    flex-grow: 1;
+    margin: 0px 5px 0px 5px;
+}
+
+.botao:hover{
+    background: #1af;
+    color: #fff;
+}
