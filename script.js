@@ -38,8 +38,9 @@ function editandoBordas(v1, v2, v3, v4){
         alert("Preencha os campos abaixo para alterar a forma do retângulo!")
         document.getElementById("ip5").value = "";
     }else if(v1 && v2 && !v3 && !v4){
-        document.getElementById("dv1").style.borderRadius = v1 + "px " + v2 + "px";
-        document.getElementById("ip5").value = `border-radius: ${v1}px ${v2}px;`;
+        document.getElementById("dv1").style.borderTopLeftRadius = v1 + "px ";
+        document.getElementById("dv1").style.borderTopRightRadius = v2 + "px";
+        document.getElementById("ip5").value = `border-top-left-radius: ${v1}px; border-top-right-radius ${v2}px;`;
     }else if(v1 && !v2 && !v3 && !v4){
         document.getElementById("dv1").style.borderTopLeftRadius = `${v1}px`;
         document.getElementById("ip5").value = `border-top-left-radius: ${v1}px;`;
@@ -48,7 +49,7 @@ function editandoBordas(v1, v2, v3, v4){
         document.getElementById("ip5").value = `border-top-right-radius: ${v2}px;`;
     }else if(!v1 && !v2 && v3 && !v4){
         document.getElementById("dv1").style.borderBottomRightRadius = `${v3}px`;
-        document.getElementById("ip5").value = `border-top-bottom-radius: ${v3}px;`;
+        document.getElementById("ip5").value = `border-bottom-right-radius: ${v3}px;`;
     }else if(!v1 && !v2 && !v3 && v4){
         document.getElementById("dv1").style.borderBottomLeftRadius = `${v4}px`;
         document.getElementById("ip5").value = `border-bottom-left-radius: ${v4}px;`;
@@ -56,6 +57,9 @@ function editandoBordas(v1, v2, v3, v4){
         if(v1===v2 && v1===v3 && v1===v4){
             document.getElementById("dv1").style.borderRadius = `${v1}px`;
             document.getElementById("ip5").value = `border-radius: ${v1}px;`;    
+        }else if(v1 === v3 && v2 === v4){
+            document.getElementById("dv1").style.borderRadius = `${v1}px ${v2}px`;
+            document.getElementById("ip5").value = `border-radius: ${v1}px ${v2}px;`
         }else{
             document.getElementById("dv1").style.borderRadius = `${v1}px ${v2}px ${v3}px ${v4}px`;
             document.getElementById("ip5").value = `border-radius: ${v1}px ${v2}px ${v3}px ${v4}px;`;
@@ -70,11 +74,15 @@ function editandoBordas(v1, v2, v3, v4){
         document.getElementById("dv1").style.borderTopRightRadius = `${v2}px`;
         document.getElementById("dv1").style.borderBottomLeftRadius = `${v4}px`;
         document.getElementById("ip5").value = `border-top-left-radius: ${v1}px; border-top-right-radius: ${v2}px; border-bottom-left-radius: ${v4}px;`;
+    }else if(v1 && !v2 && v3 && v4){
+        document.getElementById("dv1").style.borderTopLeftRadius = `${v1}px`;
+        document.getElementById("dv1").style.borderBottomRightRadius = `${v3}px`;
+        document.getElementById("dv1").style.borderBottomLeftRadius = `${v4}px`;
+        document.getElementById("ip5").value = `border-top-left-radius: ${v1}px; border-bottom-right-radius: ${v3}px; border-bottom-left-radius: ${v4}px;`;
     }else if(!v1 && v2 && v3 && !v4){
         document.getElementById("dv1").style.borderTopRightRadius = `${v2}px`;
         document.getElementById("dv1").style.borderBottomRightRadius = `${v3}px`;
-        document.getElementById("ip5").value = `border-top-right-radius: ${v2}px; border-bottom-right-radius: ${v3}px;`;
-    
+        document.getElementById("ip5").value = `border-top-right-radius: ${v2}px; border-bottom-right-radius: ${v3}px;`;    
     }else if(v1 && !v2 && !v3 && v4){
         document.getElementById("dv1").style.borderTopLeftRadius = `${v1}px`;
         document.getElementById("dv1").style.borderBottomLeftRadius = `${v4}px`;
