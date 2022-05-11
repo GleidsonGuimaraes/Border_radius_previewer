@@ -7,6 +7,7 @@
     <title>Border Radius Previewer</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsiveStyle.css">
 </head>
 <body>
 
@@ -18,46 +19,46 @@
         
         <form action="#" name="F_borderR" method="post" autocomplete="off">
             
-            <div class="dvForms0">
+            <div id="d1" class="dvForms0">
                 <div class="dvForms">
                     <label for="">Esquerdo superior:</label>
                     <input id="ip1" type="text" name="F_leftTop" autofocus>                
                 </div>
             </div>
     
-            <div class="dvForms0">
+            <div id="d2" class="dvForms0">
                 <div class="dvForms">
                     <label for="">Direito superior:</label>
                     <input id="ip2" type="text" name="F_rightTop">                
                 </div>
             </div>
     
-            <div class="dvForms0">
+            <div id="d3" class="dvForms0">
                 <div class="dvForms">
                     <label for="">Direito inferior:</label>
                     <input id="ip3" type="text" name="F_rightBottom">                
                 </div>
             </div>
     
-            <div class="dvForms0">
+            <div id="d4" class="dvForms0">
                 <div class="dvForms">
                     <label for="">Esquerdo inferior:</label>
                     <input id="ip4" type="text" name="F_leftBottom">                
                 </div>
             </div>
     
-            <div class="dvForms0">
+            <div id="d5" class="dvForms0">
                 <div class="dvForms">
                     <label for="">Css resultante:</label>
                     <input id="ip5" type="text" name="F_copyCss">
                 </div>        
-                <input class="botao btnInd" id="bt2" type="button" name="F_btnCopy" value="Copiar" onclick="copiarCss()">
+                <input class="botao" id="bt2" type="button" name="F_btnCopy" value="Copiar" onclick="copiarCss()">
             </div>
     
-            <div class="dvFormsBtn">
-                <input class="botao botaoWidth" type="button" name="F_button" value="Alterar raio" onclick="alterarBorda()">
-                <input class="botao botaoWidth" type="button" name="F_button_reset" value="Resetar retângulo" onclick="resetarRetangulo()">
-                <input class="botao botaoWidth" type="reset" name="F_reset" value="Limpar campos">
+            <div id="d6" class="dvFormsBtn">
+                <input id="botao1" class="botao" type="button" name="F_button" value="Alterar raio" onclick="alterarBorda()">
+                <input id="botao2" class="botao" type="button" name="F_button_reset" value="Resetar retângulo" onclick="resetarRetangulo()">
+                <input id="botao3" class="botao" type="reset" name="F_reset" value="Limpar campos">
             </div>
             
         </form>

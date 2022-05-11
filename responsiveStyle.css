@@ -1,0 +1,90 @@
+@media screen and (min-width: 600px) and (max-width: 1080px){
+  
+  section{
+    flex-direction: column-reverse;
+  }
+
+  form{
+    width: 80%;
+  }
+
+}
+
+@media screen and (max-width: 599px){
+
+  p{
+    text-align: justify;
+    width: 90%;
+  }
+  
+  #dv1{
+    width: 90%;
+  }
+  
+  section{
+    flex-direction: column-reverse;
+  }
+
+  form{
+    width: 90%;
+  }
+
+  .dvForms{
+    flex-direction: column;
+  }
+
+  #ip5{
+    margin: 0px;
+  }
+
+  .dvForms0 #bt2{
+    align-self: center;
+  }
+
+  .dvFormsBtn{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 150px;
+    margin: 5px 0px 5px 0px;
+  }
+
+  .botao{
+    width: 100%;
+    flex-grow: 0;
+  }
+
+  #botao1{
+    margin: 0px;
+  }
+
+  #botao3{
+    margin: 0px;
+  }
+
+  #d1{
+    order: 1;
+  }
+
+  #d2{
+    order: 2;
+  }
+
+  #d3{
+    order: 3;
+  }
+
+  #d4{
+    order: 4;
+  }
+
+  #d5{
+    height: 100px;
+    order: 6;
+  }
+
+  #d6{
+    order: 5;
+  }
+
+}
